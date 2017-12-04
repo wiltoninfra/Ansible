@@ -30,9 +30,16 @@ timeout
 log_path
 roles_path
 
-
-
 comandos ansible
-
+-------------
+```
+// Install Package
 ansible all -m command -a "comando a ser executado"
 
+// Fatos Informações que recupero de uma maquina, inventario.
+ansible all -m setup
+
+// Instalar pacote
+ansible all -m package -a "name=vim state=present"
+
+```
