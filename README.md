@@ -43,3 +43,25 @@ ansible all -m setup
 ansible all -m package -a "name=vim state=present"
 
 ```
+Links para Validador de YAML
+http://www.yamllint.com/
+
+Playbooks
+==============
+
+São Arquivos do ansible que descrevem as tarefas a serem executadas no servidor.
+Padrão de identação
+getent - Comando Linux
+Projeto AWX
+ansible all -m command -a 'cat /etc/resolv.conf'
+ansible-playbook -- syntax-check nome.yaml
+Using variable external
+ansible-playbook -e username=developer users.yaml
+Padronizando usuários no linux com Ansible
+
+Roles
+==========
+
+ ansible galaxy
+Gerencia de Tecnologias
+Dentro das roles existem arquivos main.yaml onde são definidas as regras
