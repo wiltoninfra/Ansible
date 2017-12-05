@@ -1,0 +1,14 @@
+# Teste Condicao
+- name: Operador de condicao
+  hosts: all
+
+  tasks:
+    - name: arquivo profile
+      command: test -f /etc/profile.d/dexter
+      register: result
+      ignore_errors: yes
+    - name: configurando variuavel
+      shell: echo "export DEXTER=/opt/dexter" > /etc/profile.d/dexter
+      when: result.rc == 0
+
+
