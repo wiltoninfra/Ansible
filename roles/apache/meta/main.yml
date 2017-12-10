@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Wilton Guilherme
+  description: Instalação do Apache 2.X para S.O Debian
+  company: TBF HOST <suporte@tbfhost.com.br>
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 2.4
+
+  github_branch: master
+
+  platforms:
+    - name: Debian
+      versions:
+       - Jessie
+       - Wheezy
+
+
+  galaxy_tags:
+    - web
+    - apache
+    - webserver
+
+allow_duplicates: yes

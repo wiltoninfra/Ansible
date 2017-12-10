@@ -1,0 +1,20 @@
+---
+
+- name: Deploy Configuration Web Server TBF HOST
+
+  tasks:
+    - name: Instalando apache debian family
+      package:
+         name: apache2
+         state: latest
+      when: ansible_os_family == 'Debian'
+  tasks: 
+    - name: 'Pacotes básicos do sistema'
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      with_items:
+        - vim
+        
+ 
