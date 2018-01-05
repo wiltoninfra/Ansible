@@ -1,6 +1,0 @@
----
-
-- name: Teste de Task
-  import_tasks: debian.yml
-  
-# tasks file for cloud-server

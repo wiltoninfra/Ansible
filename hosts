@@ -1,9 +1,19 @@
-[devops]
-devops.dexter.com.br
+[single-server]
+192.168.0.21
+192.168.0.24
 
-[automation]
-automation.dexter.com.br
+[vci]
 
-[docker]
-docker.dexter.com.br
+[nutrawell]
+
+[onelikeus]
+
+[tbfhost]
+
+[tbfconsultoria]
+
+[tbfdemo]
+
+
+
 

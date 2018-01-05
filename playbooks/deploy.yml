@@ -1,0 +1,7 @@
+---
+
+- hosts: single-server
+  roles: 
+    - apache2
+    - mysql5.5
+    - pacotes

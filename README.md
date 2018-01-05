@@ -1,4 +1,4 @@
-Install and configuration Ansible
+Configuração de Ambiente Cloud - TBF HOST
 ===========================
 
 ### Criar Chave de Acesso
@@ -9,26 +9,13 @@ ssh-copy-id -i  - para configurar a chave no servidor remoto
 
 ssh -i  /etc/chave_acesso  usuario@maquina ‘comando a ser executado remoto’
 
-Install version update
-apt-add-repository ppa:ansible/ansible
-
-
-Arquivo de configuração global - ansible.conf
-Arquivo de inventario - hosts
-Arquivos YAML regras - roles
-
-Criar pasta chamada playbooks
+Instale a ultima versão do Ansible.
 
 Realizar configuração do arquivo ansible.conf
 
 configurar linhas
 
 :%d - apaga todo arquivo com vim
-
-private_key_file
-timeout
-log_path
-roles_path
 
 comandos ansible
 -------------
@@ -53,12 +40,14 @@ São Arquivos do ansible que descrevem as tarefas a serem executadas no servidor
 Padrão de identação
 getent - Comando Linux
 Projeto AWX
-ansible all -m command -a 'cat /etc/resolv.conf'
-ansible-playbook -- syntax-check nome.yaml
-Using variable external
-ansible-playbook -e username=developer users.yaml
-Padronizando usuários no linux com Ansible
 
+```
+ansible all -m command -a 'ls -la'
+ansible-playbook -- syntax-check nome.yaml
+// Using variable external
+ansible-playbook -e username=developer users.yaml
+//Padronizando usuários no linux com Ansible
+```
 Roles
 ==========
 

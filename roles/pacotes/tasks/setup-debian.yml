@@ -1,0 +1,30 @@
+---
+
+
+- name: 'Pacotes básicos do sistema'
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+    become: true
+  with_items:
+    - unzip
+    - vim
+    - wget
+    - sl
+    - ccze
+    - dnsutils
+    - build-essential
+    - git
+    - postfix
+    - gcc
+    - g++
+    - curl
+    - make
+    - htop
+    - nmap
+    - net-tools
+    - mysql-client
+    - software-properties-common
+    - python-pip
+    - vmstat
